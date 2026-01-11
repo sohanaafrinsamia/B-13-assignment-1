@@ -48,7 +48,7 @@ nav{
     border: 1px solid white;
     border-radius: 4px;
     font-size: 16px;
-    gap: 10px;
+    /* gap: 10px; */
     padding: 12px 16px;
     color: #FFFFFF;
     background-color: transparent ;
@@ -128,41 +128,58 @@ padding: 12px 16px 12px 16px;
     padding: 15px;
 }
 #Note-Taking {
-    align-items: center;
-    justify-content: center;
+    max-width: 1360px;
+    padding: 0 20px;
     text-align: center;
-    margin: 0 auto;
+    margin: 80px auto;
 }
+.note-title h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #000b3d;
+    margin-bottom: 16px;
+}
+
+.note-title h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: #627382;
+    margin-bottom: 60px;
+}
+
 .note-box{
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-}
-.note-card{
-    padding: 24px;
-    margin: 0 auto;
-    width: 300px; height: 285px;
     gap: 24px;
-    border-radius: 8px;
-    border:1px solid #e7e7e7a6;
-    box-shadow: 0 0 5px 0;
-    /* flex-direction: column; */
-    /* display: flex; */
+    justify-content: center;
 }
+
+.note-card{
+    padding: 40px 24px;
+    background: #FFFFFF;
+    width: 280px;
+    /* gap: 24px; */
+    border-radius: 12px;
+    border:1px solid #f2f4f7;
+    align-items: center;
+    box-shadow: 0 0 5px 0;
+    flex-direction: column; 
+    display: flex;
+}
+
 .note-card h3{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    padding: 16px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #001b3d;
+    margin-bottom: 12px;
+    padding: 0;
 }
 .note-card p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    align-items: center;
-    background-color: #FFFFFF;
+    line-height: 1.5;
+    /* text-align: center; */
+    color: #627382;
+    background-color: transparent;
 
 }
 
@@ -206,6 +223,8 @@ padding: 12px 16px 12px 16px;
     text-align: center;    
     width: 1360px;
     height: 384px;
+    padding: 80px 40px 80px 40px;
+    clo
 }
 
 .early-content {
@@ -227,40 +246,60 @@ padding: 12px 16px 12px 16px;
     padding-top: 16px;
 }
 
-.footer-content {
-    padding: 120px;
+.footer-container{
+    background-color: #000b1c;
+    padding: 80px 0 40px 0;
     margin-top: 120px;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;  
-    max width: 1600px;
+    color: white;
 }
-.footer-content h5{
-    padding-top: 30px;
-    color: #fafafa;
-    font-size: 16px;
-    font-weight: 400;
-    /* width: 1360px; */
-    text-align: center;
-}
-.footer-content hr{
-    margin-top: 50px;
-    line-height: 54px;
-    
-    
-}
-.footer-content h4{
-    margin-bottom: 16px;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 500;
+.footer-content {
+    max width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.media{ 
-    color: black;
-    background-color: rgb(233, 230, 230);
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.social-section h4{
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.social-list {
+    display: flex;
     gap: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000b1c;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    text-decoration: none;
+}
+
+.footer-divider{
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.footer-bottom h5{
+    color: #a0aec0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
 }
